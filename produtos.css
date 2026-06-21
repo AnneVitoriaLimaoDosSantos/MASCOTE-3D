@@ -384,3 +384,148 @@ gap:15px;
 font-size:18px;
 align-items:center;
 }
+
+@media (max-width: 1440px) {
+    .container {
+        width: 100%;
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .product-layout {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .main-image img {
+        width: 100%;
+        max-width: 550px;
+    }
+    
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) { /* Tablet */
+    .top-header {
+        padding: 0 20px;
+        height: 70px;
+    }
+    
+    .search {
+        width: 380px;
+    }
+    
+    .navbar ul {
+        gap: 30px;
+        margin-left: 30px;
+    }
+    
+    .categories-btn {
+        width: 220px;
+        padding-left: 20px;
+    }
+    
+    .product-info h1 {
+        font-size: 48px;
+    }
+    
+    .product-info h1 span {
+        font-size: 24px;
+    }
+    
+    .price {
+        font-size: 52px;
+    }
+    
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .footer-benefits {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) { /* Tablet menor / Mobile grande */
+    .search {
+        display: none; /* ou pode deixar, mas fica muito apertado */
+    }
+    
+    .header-actions {
+        gap: 20px;
+    }
+    
+    .navbar ul {
+        display: none; /* Normalmente vira menu hambúrguer */
+    }
+    
+    .container {
+        padding: 0 20px;
+    }
+    
+    .breadcrumb {
+        font-size: 16px;
+        padding: 20px 0;
+    }
+    
+    .product-info h1 {
+        font-size: 42px;
+    }
+    
+    .main-image {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) { /* Celular */
+    .top-header {
+        padding: 0 15px;
+        height: 65px;
+    }
+    
+    .logo-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 24px;
+    }
+    
+    .logo-text h2 {
+        font-size: 18px;
+    }
+    
+    .product-info h1 {
+        font-size: 36px;
+    }
+    
+    .product-info h1 span {
+        font-size: 22px;
+    }
+    
+    .price {
+        font-size: 42px;
+    }
+    
+    .description,
+    .features,
+    .benefit,
+    .detail {
+        font-size: 16px;
+    }
+    
+    .products {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-benefits {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .btn-cart {
+        font-size: 20px;
+        height: 60px;
+    }
+}
